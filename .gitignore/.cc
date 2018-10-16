@@ -1,13 +1,3 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
-
-
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -112,60 +102,14 @@ int main()
     for(int i=0; i<studentcount; i++)
     {
         totalscores = totalscores + Eastman.score[i];
-        totalage = totalage + Eastman.score[i];
         avgscore = totalage/studentcount;
         avgage   = totalage/studentcount;
         
         student<<"The average age is --"<<endl;
-        student <<Eastman.ID[i] <<"\t"<<Eastman.Age[i]<<"\t"<< Eastern.gender[i];
         student << endl;
     }
      student <<"The average score is :"<<avgage<<endl;
         
-    }
-    switch (score/10.0)
-    {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    cout<<'F'<<endl;
-    break;
-    case 5:
-    cout<<'D'<<endl;
-    break;
-    case 6:
-    cout<<'C'<<endl;
-    break;
-    case 7:
-    cout<<'B'<<endl;
-    break;
-    case 8:
-    case 9:
-    cout<<'A'<<endl;
-    break;
-  default:
-      cout<<"invalid input"<<endl;
-    
-    
-}
-
-switch (gender)
-{
-    case 'M':
-    case 'm':
-    cout<<"Male"<<endl;
-    break;
-    
-    case 'F':
-    case 'f':
-    cout<<"Female"<<endl;
-    break;
-    
-    default:
-    cout<<"wrong input"<<endl;
-}
-
+   
 return 0;
-
+}
